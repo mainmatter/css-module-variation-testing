@@ -7,15 +7,7 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function () {
-  this.route('test', function () {
-    this.route('regular', function () {
-      this.route('normal');
-      this.route('ember-css-modules');
-      this.route('vue');
-      this.route('svelt');
-      this.route('simple-append');
-    });
-  });
+  this.route('test', { path: 'test/:test/:kind' });
 
   this.route('demo', function () {
     this.route('regular');

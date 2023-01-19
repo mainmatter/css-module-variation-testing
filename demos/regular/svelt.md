@@ -1,6 +1,6 @@
 ### Input
 
-```
+```html
 <div class="outer bordered">
   <p>Some Text</p>
 </div>
@@ -27,7 +27,7 @@
 
 ### Output
 
-```
+```html
 <div class="outer bordered generated-1">
   <p class="generated-2">Some Text</p>
 </div>
