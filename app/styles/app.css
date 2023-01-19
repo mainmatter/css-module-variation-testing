@@ -1,0 +1,8 @@
+.flex {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.example {
+  border: 1px solid grey;
+}

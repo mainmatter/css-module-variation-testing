@@ -1,0 +1,12 @@
+{{page-title "Basic"}}
+
+<h1>Basic Test</h1>
+
+<div class="flex">
+    {{#each (array "ember-css-modules" "normal" "simple-append" "svelt" "vue") as |example|}}
+  <div class="example">
+      <h2>{{example}}</h2>
+      <iframe src="http://localhost:4200/test/regular/{{example}}" frameborder="0"></iframe>
+  </div>
+    {{/each}}
+</div>
