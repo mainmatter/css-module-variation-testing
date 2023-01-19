@@ -6,3 +6,7 @@
 .example {
   border: 1px solid grey;
 }
+
+.bordered {
+  border: 1px solid black;
+}
