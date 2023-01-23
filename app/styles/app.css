@@ -14,3 +14,18 @@
 iframe {
   height: 2000px;
 }
+
+.title {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.title h1 {
+  margin: 0 1em 0 0;
+}
+
+.title fieldset {
+  display: flex;
+  padding: 0 1em;
+  margin: 0;
+}
