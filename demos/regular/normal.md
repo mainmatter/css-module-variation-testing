@@ -1,11 +1,12 @@
 ### Input
 
-```html
+```html {data-filename=app/components/some-text.hbs}
 <div class="outer bordered">
   <p>Some Text</p>
 </div>
+```
 
-<style>
+```css {data-filename=app/styles/some-text.css}
   .outer {
     --bg-color: pink;
     height: 100px;
@@ -22,17 +23,17 @@
   p {
     font-weight: bold
   }
-</style>
 ```
 
 ### Output
 
-```html
+```html {data-filename=app/components/some-text.hbs}
 <div class="outer bordered">
   <p>Some Text</p>
 </div>
+```
 
-<style>
+```css {data-filename=app/styles/some-text.css}
   .outer {
     --bg-color: pink;
     height: 100px;
@@ -49,7 +50,6 @@
   p {
     font-weight: bold
   }
-</style>
 ```
 
 ### Example
