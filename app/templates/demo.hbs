@@ -6,7 +6,7 @@
     {{#each (array "ember-css-modules" "normal" "simple-append" "svelt" "vue") as |example|}}
   <div class="example">
       <h2>{{example}}</h2>
-      <iframe src="http://localhost:4200/test/{{@model.demo}}/{{example}}" frameborder="0"></iframe>
+      <iframe src="/test/{{@model.demo}}/{{example}}" frameborder="0"></iframe>
   </div>
     {{/each}}
 </div>
