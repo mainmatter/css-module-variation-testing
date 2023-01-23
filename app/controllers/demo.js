@@ -4,8 +4,8 @@ import { action } from '@ember/object';
 
 export default class DemoController extends Controller {
   availableVariations = [
-    'ember-css-modules',
     'normal',
+    'ember-css-modules',
     'simple-append',
     'svelt',
     'vue',
