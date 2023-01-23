@@ -1,12 +1,26 @@
 {{page-title "Basic"}}
 
-<h1>{{@model.demo}} Test</h1>
+<div class="title">
+  <h1>{{@model.demo}} Test</h1>
+
+  <fieldset>
+    <legend>Show variations:</legend>
+
+    {{#each this.availableVariations as |variation|}}
+      <div>
+        <input type="checkbox" id={{variation}} name={{variation}} checked={{this.isChecked variation}} {{on "change" (fn this.changed variation)}}>
+        <label for={{variation}}>{{variation}}</label>
+      </div>
+    {{/each}}
+  </fieldset>
+</div>
+
 
 <div class="flex">
-    {{#each (array "ember-css-modules" "normal" "simple-append" "svelt" "vue") as |example|}}
+    {{#each this.variations as |example|}}
   <div class="example">
       <h2>{{example}}</h2>
-      <iframe src="/test/{{@model.demo}}/{{example}}" frameborder="0"></iframe>
+      <iframe src="/test/{{@model.demo}}/{{example}}" frameborder="0" title="{{@model.demo}} {{example}}"></iframe>
   </div>
     {{/each}}
 </div>
