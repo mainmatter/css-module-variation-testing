@@ -13,7 +13,7 @@
     color: green;
   }
 
-  .first :generated(.second, 'components/second.hbs'){
+  .first :generated(.second, 'components/second.css'){
     color: green;
   }
 ```
@@ -85,10 +85,10 @@ There could be generated function for generating css selectors in javascript (co
 ```js
 import generated from 'css-module'
 
-const generatedFirst = generated('.first', 'components/first.hbs');
+const generatedFirst = generated('.first', 'components/first.css');
 // .first[data-generated-1]
 
-const generatedSecond = generated('.second', 'components/second.hbs');
+const generatedSecond = generated('.second', 'components/second.css');
 // .second[data-generated-2]
 
 const generatedSelector = `${generaatedFirst} ${generatedSecond}`;
