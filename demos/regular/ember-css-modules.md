@@ -27,12 +27,13 @@ p {
 
 ### Output
 
-```html
+```html {data-filename=app/components/some-text.hbs}
 <div class="_outer_generated-1 bordered">
   <p>Some Text</p>
 </div>
+```
 
-<style>
+```css {data-filename=app/components/some-text.css}
   ._outer_generated-1 {
     --bg-color: pink;
     height: 100px;
@@ -49,7 +50,6 @@ p {
   p {
     font-weight: bold
   }
-</style>
 ```
 
 ### Example
