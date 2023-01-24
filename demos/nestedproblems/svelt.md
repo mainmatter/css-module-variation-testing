@@ -13,7 +13,7 @@
 }
 
 .a :global(.b){
-  color: blue;
+  color: red;
 }
 ```
 
@@ -22,7 +22,7 @@
 ```
 ```css {data-filename=app/components/b.css}
 .b{
-  color: red;
+  color: green;
 }
 ```
 
@@ -31,7 +31,7 @@
 ```
 ```css {data-filename=app/components/c.css}
 .b{
-  color: red;
+  color: green;
 }
 ```
 
@@ -50,7 +50,7 @@
 }
 
 .a.generated-1 .b{
-  color: blue;
+  color: red;
 }
 ```
 
@@ -59,7 +59,7 @@
 ```
 ```css {data-filename=app/components/b.css}
 .b.generated-2{
-  color: red;
+  color: green;
 }
 ```
 
@@ -68,7 +68,7 @@
 ```
 ```css {data-filename=app/components/c.css}
 .b.generated-3{
-  color: red;
+  color: green;
 }
 ```
 
@@ -97,7 +97,9 @@
 
 
 ### Problems
-The same class name is used in multiple components. Style leaked when nested component is selected with :global
+The same class name is used in multiple components. Style leaked when nested component is selected with :global.
+
+Color of C is red instead of green
 
 ### Possible solution
 ```css
